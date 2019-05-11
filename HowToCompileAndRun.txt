@@ -1,0 +1,13 @@
+javac -d . --module-path /Users/aaronbird/Library/FX/lib --add-modules=javafx.controls Game.java Character.java Grid.java GameLoop.java CustomButton.java Enemy.java Painter.java BodyPart.java
+
+java --module-path /Users/aaronbird/Library/FX/lib --add-modules=javafx.controls Game
+
+
+
+jar --module-path /Users/aaronbird/Library/FX/lib --add-modules=javafx.controls cfm MyGame.jar MANIFEST.MF classes/*.class 
+
+
+
+
+
+java -jar --module-path /Users/aaronbird/Library/FX/lib --add-modules=javafx.controls MyGame.jar 
